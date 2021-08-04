@@ -173,7 +173,7 @@ Processing... Please wait
 
   const stream = ytbDownloader(videoUrl, { filter: 'audioonly' });
 
-  return setupProgressAndDownloadMedia(progressMessage, info.videoDetails.title, 'mp3', stream, msg.from.id, cacheKey);
+  return setupProgressAndDownloadMedia(progressMessage, info.videoDetails.title.replace(/[^a-z0-9\_\-\.]/ig, ''), 'mp3', stream, msg.from.id, cacheKey);
 });
 
 bot.onText(/\/video(.+)?/, async (msg, match) => {
