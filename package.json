@@ -1,0 +1,27 @@
+{
+  "name": "tghorariooficial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:CShigaki/tghorariooficial.git",
+  "author": "Celso Takeo Shigaki <celsomaker@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "dev": "ts-node-dev --respawn --transpile-only app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dayjs": "^1.10.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "node-telegram-bot-api": "^0.51.0",
+    "progress-stream": "^2.0.0",
+    "typescript": "^4.2.3",
+    "uuid4": "^2.0.2",
+    "ytdl-core": "^4.8.3"
+  },
+  "devDependencies": {
+    "@types/node-telegram-bot-api": "^0.51.1",
+    "ts-node-dev": "^1.1.6",
+    "tslint": "^6.1.3"
+  }
+}
